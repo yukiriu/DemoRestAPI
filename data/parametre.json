@@ -1,0 +1,55 @@
+[{
+    "Verbe" : "GET",
+    "Url": "/api/bookmarks",
+    "Role": "Obtenir la liste des signets en ordre croissant d’Id"
+  },
+  {
+    "Verbe" : "GET",
+    "Url": "/api/bookmarks?sort=\"name\"",
+    "Role": "Obtenir la liste des signets en ordre croissant de nom"
+  },
+  {
+    "Verbe" : "GET",
+    "Url": "/api/bookmarks?sort=\"category\"",
+    "Role": "Obtenir la liste des signets en ordre croissant de catégorie"
+  },
+  {
+    "Verbe" : "GET",
+    "Url": "/api/bookmarks/id",
+    "Role": "Obtenir le signet ayant le Id de valeur id"
+  },
+  {
+    "Verbe" : "GET",
+    "Url": "/api/bookmark?name=\"nom\"",
+    "Role": "Obtenir le signet ayant le Name de valeur nom"
+  },
+  {
+    "Verbe" : "GET",
+    "Url": "/api/bookmarks?name=\"ab*\"",
+    "Role": "Obtenir la liste des signets dont la valeur du champ Name commence par le préfixe ab (évidemment, ab n’est qu’un exemple, et tout préfixe non-vide serait valide)"
+  },
+  {
+    "Verbe" : "GET",
+    "Url": "/api/bookmarks?category=\"sport\"",
+    "Role": "Obtenir la liste des signets ayant un Category de valeur sport"
+  },
+  {
+    "Verbe" : "GET",
+    "Url": "/api/bookmark?",
+    "Role": "Obtenir la liste des paramètres supportés pour une requête portant sur un seul signet (celles dont l’URL débute par /api/bookmark)"
+  },
+  {
+    "Verbe" : "POST",
+    "Url": "/api/bookmarks",
+    "Role": "Ajouter un signet aux signets existants (note : vous devez valider le signet avant de l’ajouter)"
+  },
+  {
+    "Verbe" : "PUT",
+    "Url": "/api/bookmarks/id",
+    "Role": "Modifier le signet ayant un Id de valeur id (note : vous devez valider la nouvelle valeur du signet avant de procéder à la modification)"
+  },
+  {
+    "Verbe" : "DELETE",
+    "Url": "/api/bookmarks/id",
+    "Role": "Effacer le signet ayant un Id de valeur id"
+  }]
